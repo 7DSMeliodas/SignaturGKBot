@@ -20,6 +20,6 @@ async def edit_promo(c, m):
   edit_with = '\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️\n<b>Auch Du bist ein Fan von @GruppenKanaele?</b>\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️'
   new_message = original_text
   new_message += edit_with
-  m.edit_media_caption(cid, mid, new_message, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=button_link)]]))
+  c.edit_media_caption(cid, mid, new_message, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=button_link)]]))
 
 bot.run()
