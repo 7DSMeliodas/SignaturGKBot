@@ -4,7 +4,7 @@ import asyncio
 bot_name = 'PromoAppenderBot'
 api_id = 1892826
 api_hash = '2f1ad5d37f95baf2978252c0e562c551'
-bot_token = ''
+bot_token = '6007778653:AAH6bqeOFwKS3LuFki4glszRkLQKXDahYeQ'
 
 bot = Client(bot_name, api_id, api_hash, bot_token)
 
