@@ -1,4 +1,6 @@
 from pyrogram import Client, filters
+from pyrogram.types import (
+    ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton)
 import asyncio
 
 bot_name = 'PromoAppenderBot'
