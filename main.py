@@ -31,7 +31,7 @@ async def edit_promo_2(c, m):
   cid = m.chat.id
     
   original_text = m.caption.html
-  edit_with = '\n\n<b>Eine Zensur findet <s>nicht</s> statt</b> <b>😱</b>\n<a href='https://t.me/Metapedia_Deutsch/1173'>Art. 5 Grundgesetz</a>\n\n➡️ <a href='https://t.me/EchteNachrichten'>Echte Nachrichten</a>\n➡️ <a href='https://t.me/News_World_International'>Real News International</a>\n➡️ <a href='https://t.me/AlternativeMedien'>Freie Medien</a>\n➡️ <a href='https://t.me/Prozessbeobachter'>\(Un\)Rechtswesen</a>\n➡️ <a href='https://t.me/Corona_Reset'>Unzensierte Querschau</a>\n➡️ <a href='https://t.me/gesperrtBRD'>Gelöschtes hochladen</a>\n\n<b>Sehen, was gesperrt ist</b>\n<b>@Medienzensur</b>'
+  edit_with = "\n\n<b>Eine Zensur findet <s>nicht</s> statt</b> <b>😱</b>\n<a href='https://t.me/Metapedia_Deutsch/1173'>Art. 5 Grundgesetz</a>\n\n➡️ <a href='https://t.me/EchteNachrichten'>Echte Nachrichten</a>\n➡️ <a href='https://t.me/News_World_International'>Real News International</a>\n➡️ <a href='https://t.me/AlternativeMedien'>Freie Medien</a>\n➡️ <a href='https://t.me/Prozessbeobachter'>\(Un\)Rechtswesen</a>\n➡️ <a href='https://t.me/Corona_Reset'>Unzensierte Querschau</a>\n➡️ <a href='https://t.me/gesperrtBRD'>Gelöschtes hochladen</a>\n\n<b>Sehen, was gesperrt ist</b>\n<b>@Medienzensur</b>"
   new_message = original_text
   new_message += edit_with
 
