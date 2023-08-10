@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import (
     ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton)
 import asyncio
+from pyrogram import enums
 
 bot_name = 'PromoAppenderBot'
 api_id = 1892826
@@ -22,6 +23,6 @@ async def edit_promo(c, m):
   edit_with = '\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️\n<b>Auch Du bist ein Fan von @GruppenKanaele?</b>\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️'
   new_message = original_text
   new_message += edit_with
-  await c.edit_message_caption(cid, mid, new_message, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=button_link)]]))
+  await c.edit_message_caption(cid, mid, new_message, parse_mode=enums.HTML, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=button_link)]]))
 
 bot.run()
