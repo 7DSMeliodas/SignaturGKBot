@@ -25,4 +25,15 @@ async def edit_promo(c, m):
   new_message += edit_with
   await c.edit_message_caption(cid, mid, new_message, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=button_link)]]))
 
+@bot.on_message(filters.chat(-1001389504085))
+async def edit_promo_2(c, m):
+  mid = m.id
+  cid = m.chat.id
+    
+  original_text = m.caption.html
+  edit_with = '\n\n<b>Eine Zensur findet <s>nicht</s> statt</b> <b>😱</b>\n<a href='https://t.me/Metapedia_Deutsch/1173'>Art. 5 Grundgesetz</a>\n\n➡️ <a href='https://t.me/EchteNachrichten'>Echte Nachrichten</a>\n➡️ <a href='https://t.me/News_World_International'>Real News International</a>\n➡️ <a href='https://t.me/AlternativeMedien'>Freie Medien</a>\n➡️ <a href='https://t.me/Prozessbeobachter'>\(Un\)Rechtswesen</a>\n➡️ <a href='https://t.me/Corona_Reset'>Unzensierte Querschau</a>\n➡️ <a href='https://t.me/gesperrtBRD'>Gelöschtes hochladen</a>\n\n<b>Sehen, was gesperrt ist</b>\n<b>@Medienzensur</b>'
+  new_message = original_text
+  new_message += edit_with
+
+  await c.edit_message_caption(cid, mid, new_message, parse_mode=enums.ParseMode.HTML)
 bot.run()
