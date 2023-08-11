@@ -17,7 +17,7 @@ async def edit_promo(c, m):
   cid = m.chat.id
 
   button_text = 'Unsere ☕️ Kasse freut sich!'
-  button_link = 'https://t.me/Shop_System_Telegram/6/300'
+  button_link = 'https://t.me/Shop_System_Telegram/6/757'
   
   original_text = m.caption.html
   edit_with = '\n\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️\n<b>Auch Du bist ein Fan von @GruppenKanaele?</b>\n▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️▫️'
